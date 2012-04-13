@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ViewPagerStyle1Activity!</string>
+    <string name="app_name">ViewPagerStyle1</string>
+    <string name="indicator_height">3dip</string>
+
+</resources>

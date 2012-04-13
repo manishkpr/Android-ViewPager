@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    
+
+    <TableLayout
+        style="@style/layout_f_w"
+        android:stretchColumns="*" >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:background="#dddddd"
+            style="@style/layout_wrap">
+            
+              <!-- First Tab -->
+	            <LinearLayout
+		        style="@style/layout_f_w"
+		        android:id="@+id/first_text"
+		        android:orientation="vertical" >
+		        
+	                  <TextView
+	                    android:id="@+id/textView1"
+	                    style="@style/text_title"
+	                    android:text="Tab1" />
+	           </LinearLayout>
+	           
+	        <!-- Second Tab -->
+	            <LinearLayout
+		        style="@style/layout_f_w"
+		        android:id="@+id/second_text"
+		        android:orientation="vertical" >
+
+	                <TextView
+	                    android:id="@+id/textView1"
+	                    style="@style/text_title"
+	                    android:text="Tab2" />
+	        
+	           </LinearLayout>
+	     
+        </TableRow>
+    </TableLayout>
+    <!-- Include Tab Indicator  -->
+ <include layout="@layout/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content"  />
+ 
+ <android.support.v4.view.ViewPager
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:id="@+id/viewPager" />
+</LinearLayout>
